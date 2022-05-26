@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass&family=Roboto&family=Roboto+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #111;
+}
+.tittle {
+  color: white;
+  font-size: 60px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 15px;
+  text-align: center;
+}
+/* .main{
+  max-width: 35%;
+}  */
+.content {
+  max-width: 100%;
+  background: linear-gradient(120deg, hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 1px rgb(76, 175, 80);
+  word-break: break-word;
+  margin-bottom: 30px;
+}
+.busca {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.busca input {
+  color: white;
+  width: 70%;
+  padding: 0 10px;
+  border: none;
+  border-radius: 0px;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: transparent;
+}
+.busca input:focus {
+  outline: none;
+}
+.busca input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.busca #btn {
+  cursor: pointer;
+  width: 20%;
+  height: 40px;
+  font-size: 20px;
+  background-color: rgb(76, 175, 80);
+  color: #fff;
+  border: 2px solid rgb(76, 175, 80);
+  border-radius: 5px;
+  transition-duration: 500ms;
+}
+.busca #btn:hover {
+  background-color: transparent;
+  color: rgb(76, 175, 80);
+  border-radius: 20px;
+}
+.busca #btn:active {
+  transform: translateY(3px);
+  transition-duration: 0.1ms;
+}
+
+#txt {
+  max-width: 100%;
+  background: linear-gradient(120deg, hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+  padding: 20px 20px;
+  border-radius: 5px;
+  border: 1px solid rgb(76, 175, 80);
+  word-break: break-word;
+  font-family: "Roboto mono";
+}
+
+#txt h1 {
+  color: rgb(76, 175, 80);
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+#txt p {
+  max-width: 500px;
+  color: white;
+  font-size: 15px;
+  font-style: italic;
+}
+#txt p span {
+  font-size: 20px;
+  color: rgb(76, 175, 80);
+  font-family: "Roboto mono";
+  margin-right: 5px;
+}
